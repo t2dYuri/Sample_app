@@ -3,11 +3,10 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
-
+gem 'minitest'
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
-  gem 'spork-rails'
 end
 
 group :test do
@@ -52,4 +51,3 @@ group :production do
   gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
- gem 'minitest'
