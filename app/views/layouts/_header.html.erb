@@ -1,10 +1,10 @@
 <header class="navbar navbar-static-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container" align="center">
-      <%= link_to image_tag("s5_logo.png", alt: "Rails"), '#' %>
+      <%= link_to image_tag("s5_logo.png", alt: "Rails"), root_path %>
       <nav class="btn-group">
-        <%= link_to "Home",    '#', class: "btn btn-primary"%>
-        <%= link_to "Help",    '#', class: "btn btn-primary" %>
+        <%= link_to "Home",    root_path, class: "btn btn-primary"%>
+        <%= link_to "Help",    help_path, class: "btn btn-primary" %>
         <%= link_to "Enter", '#', class: "btn btn-primary" %>
       </nav>
     </div>
