@@ -1,16 +1,23 @@
 @import "bootstrap";
 
+/* miscellaneous */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  /*@include box_sizing;*/
+}
+
 a:link, a:visited, a:hover, a:focus, a:active {
   outline: none;
 }
-
 .container1 {
   background-color: white;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-
 .hero-unit {
   padding: 10px;
   margin-top: 15px;
@@ -49,7 +56,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  font-weight: 900;
+  font-weight: bold;
 }
 h2 {
   font-size: 1.5em;
@@ -91,4 +98,58 @@ footer {
       margin-left: 10px;
     }
   }
+}
+/* sidebar */
+aside {
+  section {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0;
+    }
+  }
+}
+.gravatar {
+  float: left;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+/* forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  /*width: 100%;*/
+  margin-bottom: 15px;
+}
+input {
+  height: auto !important;
+}
+.input1 {
+  width: 50%;
+}
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
 }
