@@ -6,7 +6,6 @@
   float: left;
   width: 100%;
   margin-top: 45px;
-  /*@include box_sizing;*/
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
@@ -53,14 +52,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
 }
 h2 {
   font-size: 1.5em;
-  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -82,9 +79,6 @@ footer {
     color: #555;
     &:hover {
       color: #222;
-    }
-    &:active {
-      outline: 0;
     }
   }
   small {
@@ -132,7 +126,6 @@ aside {
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  /*width: 100%;*/
   margin-bottom: 15px;
 }
 input {
@@ -141,15 +134,13 @@ input {
 .input1 {
   width: 50%;
 }
-#error_explanation {
-  color: #f00;
-  ul {
-    list-style: none;
-    margin: 0 0 18px 0;
-  }
+.alert-danger {
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: solid;
 }
-
-.field_with_errors {
-  @extend .control-group;
-  @extend .error;
+.alert-success {
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: solid;
 }
