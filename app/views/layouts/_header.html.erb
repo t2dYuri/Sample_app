@@ -6,7 +6,7 @@
           <%= link_to "Home",    root_path, class: "btn btn-primary"%>
           <%= link_to "Help",    help_path, class: "btn btn-primary" %>
         <% if signed_in? %>
-            <%= link_to "Users", '#', class: "btn btn-primary" %>
+            <%= link_to "Users", users_path, class: "btn btn-primary" %>
               <a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Account <b class="caret"></b></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li><%= link_to "Profile", current_user %></li>
@@ -14,7 +14,6 @@
                 <li class="divider"></li>
                 <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
               </ul>
-            </li>
         <% else %>
             <%= link_to "Enter", signin_path, class: "btn btn-primary" %>
         <% end %>
