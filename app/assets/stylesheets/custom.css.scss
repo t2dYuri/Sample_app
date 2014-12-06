@@ -130,9 +130,13 @@ input, textarea, select, .uneditable-input {
 }
 input {
   height: auto !important;
+  width: 100%;
 }
 .input1 {
   width: 50%;
+}
+.btn {
+  width: auto;
 }
 .alert-danger {
   margin-top: 15px;
@@ -143,4 +147,14 @@ input {
   margin-top: 15px;
   text-align: center;
   text-decoration: solid;
+}
+.alert-notice {
+  border-color: #e7e6b3;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: solid;
+  background-color: #fffebb;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
