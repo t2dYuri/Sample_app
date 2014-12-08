@@ -9,6 +9,7 @@ gem 'bcrypt'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'gretel'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
