@@ -181,3 +181,41 @@ input {
   @include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-small);
 }
 
+/*MICROPOSTS*/
+.usr-block {
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  /*margin-right: 30px;*/
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.microposts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.content {
+  display: block;
+}
+.timestamp {
+  color: #555;
+  text-align: right;
+}
+/*.gravatar {
+  float: left;
+  margin-right: 10px;
+}*/
+aside {
+  textarea {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

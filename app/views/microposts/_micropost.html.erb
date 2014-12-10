@@ -1,0 +1,8 @@
+<li>
+  <span class="content"><%= micropost.content %></span>
+  <h6 class="timestamp">
+    <em>Отправлено <%= time_ago_in_words(micropost.created_at) %> назад.</em>
+  <% if current_user?(micropost.user) %>
+      <%= link_to "удалить", micropost, method: :delete, data: { confirm: "Вы уверены?" }, title: micropost.content, class: "btn btn-primary btn-xs" %></h6>
+  <% end %>
+</li>

@@ -1,3 +1,19 @@
+<% if signed_in? %>
+    <div class="row">
+      <aside class="col-sm-7 col-md-4 usr-block">
+        <section>
+          <%= render 'shared/user_info' %>
+        </section>
+        <section>
+          <%= render 'shared/micropost_form' %>
+        </section>
+      </aside>
+      <div class="col-sm-11 col-md-8">
+        <h3 align="center">Поток сообщений</h3>
+        <%= render 'shared/feed' %>
+      </div>
+    </div>
+<% else %>
 <div class="hero-unit">
   <h1>Sample App</h1>
   <h2>
@@ -7,3 +23,4 @@
 </div>
 <h4 align="justify">Проверка разных стилей текста, блоков и внешних фрэймов ... Кажется, все как обычно... </h4>
 <p align="center"><iframe width="560" height="315" src="//www.youtube.com/embed/TWwpAgY8DXQ?rel=0" frameborder="0" allowfullscreen></iframe> <iframe width="560" height="315" src="//www.youtube.com/embed/6ObB8RL-_pE?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<% end %>
