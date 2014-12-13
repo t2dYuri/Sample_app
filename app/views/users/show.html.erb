@@ -11,10 +11,16 @@
         <%= @user.email %>
       </h4>
     </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+    <section>
+      <span style="text-align: center;"><%= render 'follow_form' if signed_in? %></span>
+    </section>
   </aside>
   <div class="col-sm-11 col-md-8", style="padding-right: 25px;">
     <% if @user.microposts.any? %>
-        <h3 align="center">Сообщения этого пользователя (<%= @user.microposts.count %>)</h3>
+        <h3 align="center">Сообщения пользователя (<%= @user.microposts.count %>)</h3>
         <ul class="microposts list-unstyled">
           <%= render @microposts %>
         </ul>

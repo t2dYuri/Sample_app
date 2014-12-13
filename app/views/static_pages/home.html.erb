@@ -1,8 +1,11 @@
 <% if signed_in? %>
-    <div class="row">
+    <div class="container row">
       <aside class="col-sm-7 col-md-4 usr-block">
         <section>
           <%= render 'shared/user_info' %>
+        </section>
+        <section>
+          <%= render 'shared/stats' %>
         </section>
         <section>
           <%= render 'shared/micropost_form' %>
